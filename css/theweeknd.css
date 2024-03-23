@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
+  font-family: Verdana ;
+  font-size: large;
+  line-height: 30px;
+
+  
+}
+
+.column {
+  float: left;
+  width: 14.28111%;
+  height: fit-content;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display:grid;
+}
+
+h2{
+padding-left: 50px;
+padding-right: 50%;
+}
+
+body p{
+  width: 900px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: darkgrey;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: center;
+  
+ 
+}
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+position: absolute;
+width: 100%;
+height: auto;
+opacity: 0;
+transition: opacity 1.5s ease-in-out;
+}
+
+.fade.active {
+opacity: 1;
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  border: #333;
+}
+.hero-text h1 {
+  font-size: 3em;
+  margin: 0;
+  opacity: 0;
+  
+  
+}
+.hero-text p {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 0;
+  -webkit-text-stroke:  black;
+  opacity: 0; /* Initially set opacity to 0 for the fade-in effect */
+}
+
+
+
+nav {
+  max-width: 100%;
+  mask-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0;
+  padding: 60px 0;
+}
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 0, 0, 0.64);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease-in-out; 
+}
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+nav ul li button{
+  border: 0px;
+ background: transparent;
+ 
+   
+}
+nav ul li button.btn1 :hover{
+  background-color: #d7d7d7;
+  background-image:  linear-gradient(to right top, #d1ced1 0%, #474849 100%);
+}
+nav ul li button.btn2 :hover{
+  background: rgb(37,240,148);
+  background: linear-gradient(126deg, rgba(37,240,148,1) 7%, rgba(19,126,80,1) 46%, rgba(6,61,38,1) 77%);
+}
+nav ul li button.btn3 :hover{
+  background: rgb(20,22,21);
+  background: linear-gradient(162deg, rgba(20,22,21,1) 0%, rgba(99,95,94,1) 47%, rgba(133,128,124,0.6307773109243697) 97%);
+} 
+nav ul li button.btn4 :hover{
+  background: rgb(209,91,34);
+  background: linear-gradient(148deg, rgba(209,91,34,1) 6%, rgba(228,3,47,1) 28%, rgba(228,3,47,1) 62%, rgba(13,21,60,1) 96%);
+}  
+nav ul li button.btn5 :hover{
+  background-color: #d7d7d7;
+  background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+}    
+nav ul li button.btn6 :hover{
+  background-color: #d7d7d7;
+  background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+}   
+
+
+
+.container-1{
+  display: flex;
+  justify-content: space-between;
+}
+.container-1 img{
+height: 300px;
+width: 300px;
+mask-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+padding-left: 50PX;
+padding-right: 50px ;
+
+}
