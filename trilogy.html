@@ -33,26 +33,32 @@
    </section> 
 
    <div class="container">
-    <img src="imgs/HOB.jpg" class="picture">
-    <img src="imgs/The_Weeknd_-_Thursday.png" class="picture">
-    <img src="imgs/EOS.jpg" class="picture">
+      <div class="parallax">
+         <img  src="imgs/HOB.jpg" class="inline-photo show-on-scroll">
+       </div>
+       <div class="parallax">
+         <img  src="imgs/The_Weeknd_-_Thursday.png" class="inline-photo show-on-scroll">
+       </div>
+       <div class="parallax">
+         <img  src="imgs/EOS.jpg" class="inline-photo show-on-scroll">
+       </div>
    </div>
    <br><br><br>
   <div class="yapping">
    <p>
     trilogy which means the sequunce of a thing that has three parts, a series of three,
     and in here it is the house for the Weeknd's first three albums of mixtapes.
-    <br>
+    <br><br>
     and they are a trilogy beacuse you feel like you are watching a movie series in some sort
     how in the beggining the weeknd shesds the light in his early adulthood,
     it shows the nigatve effects of being abondend by a father figure at such a young age does, 
     so he went to music to reflect  upon it.
-    <br>
+    <br><br>
     In house of ballons, it reflects this im fine from the outside but depressed from the inside,
     espiccily in the song house of ballons/glass table girls, the weeknd it tring to conmvinse himself that he is happy,
     saying "this is a happy house a happy place, ... oh this is fun" which indectaes that he wants to show the viewer he 
     is happy and evreything is fine but in reailty its not, it never have been.
-    <br>
+    <br><br>
     
    </p>
 
@@ -65,13 +71,31 @@
 
   </body>
 
-   <script>
-    const title = document.querySelector('.title')
-    const img = document.querySelector('.img')
+  <script>
+   const title = document.querySelector('.title')
+   const img = document.querySelector('.img')
 
-    document.addEventListener('scroll', function() {
-    let value = window.scrollY 
-    title.style.marginTop = value * 1.1 + 'px'
-    })
-   </script>
+   document.addEventListener('scroll', function() {
+       let value = window.scrollY;
+
+       // Define the threshold where the title should stop moving
+       const stopThreshold = 330;
+
+       // Define the threshold where the title should disappear
+       const disappearThreshold = img.offsetTop + img.offsetHeight;
+
+       // Check if the scroll position is beyond the threshold
+       if (value >= disappearThreshold) {
+           title.style.opacity = 0; // Make the title disappear
+       } else {
+           // If the scroll position is above the threshold, make the title visible
+           title.style.opacity = 1;
+           // Adjust the title's margin based on scroll position, up to the stop threshold
+           title.style.marginTop = Math.min(value * 1.1, stopThreshold) + 'px';
+       }
+   });
+</script>
+
+
+   <script src="script.js"></script>
 </html>
