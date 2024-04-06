@@ -134,7 +134,48 @@ nav ul li button{
   border: 0px;
   background: transparent; 
 }
-
+nav ul li.album1 :hover{
+  background-image: url(/imgs/theTrilogy.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+nav ul li.album2 :hover{
+  background-image: url(../../imgs/kissland.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+nav ul li.album3 :hover{
+  background-image: url(../../imgs/BBTM.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
+nav ul li.album4 :hover{
+  background-image: url(../../imgs/starboy2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}  
+nav ul li.album5 :hover{
+  background-image: url(../../imgs/MDM.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}    
+nav ul li.album6 :hover{
+  background-image: url(../../imgs/afterHours.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}   
+nav ul li.album7 :hover{
+  background-image: url(../../imgs/dawnFm.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
 nav ul li.album1 button :hover{
   background-image: none;
   color: transparent;
